@@ -1,0 +1,28 @@
+//C++ if else and logical operators Exercise 2
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int q1, midt, final;
+    double grade;
+    cout<<"Enter Quiz Grade: "<<endl;
+    cin>>q1;
+    cout<<"Enter midt Grade: "<<endl;
+    cin>>midt;
+    cout<<"Enter Final Grade: "<<endl;
+    cin>>final;
+    grade = (q1+midt+final)/3;
+    if(grade > 90 && grade <= 100) {
+             cout<<grade<<" :A "<<endl;}
+    else if(grade >= 70 && grade <=90) {
+         cout<<grade<<" :B "<<endl; }
+         else if(grade >= 50 && grade <= 70) {
+              cout<<grade<<" :C "<<endl; }
+              else if(grade <= 50) {
+                   cout<<grade<<" :F "<<endl; }
+                   else cout<<"invalid"<<endl;
+              
+    system("pause");
+    return 0;
+}
